@@ -1,0 +1,79 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a12"/>
+      <stop offset="100%" style="stop-color:#050508"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f5ff"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- Glow effects -->
+  <ellipse cx="300" cy="150" rx="200" ry="150" fill="#00f5ff" opacity="0.05" filter="blur(60px)"/>
+  <ellipse cx="900" cy="150" rx="200" ry="150" fill="#a855f7" opacity="0.05" filter="blur(60px)"/>
+
+  <!-- Logo cube -->
+  <g transform="translate(150, 100)">
+    <!-- Cube faces -->
+    <path d="M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z" fill="url(#accentGradient)" stroke="url(#textGradient)" stroke-width="2"/>
+    <path d="M50 0 L100 25 L50 50 L0 25 Z" fill="rgba(0,245,255,0.1)" stroke="url(#textGradient)" stroke-width="1"/>
+    <path d="M50 50 L100 25 L100 75 L50 100 Z" fill="rgba(59,130,246,0.1)" stroke="url(#textGradient)" stroke-width="1"/>
+    <path d="M50 50 L0 25 L0 75 L50 100 Z" fill="rgba(168,85,247,0.1)" stroke="url(#textGradient)" stroke-width="1"/>
+    <!-- Inner detail -->
+    <circle cx="50" cy="50" r="15" fill="none" stroke="url(#textGradient)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="280" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="white">
+    ARKA
+  </text>
+  <text x="470" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="300" fill="url(#textGradient)">
+    Protocol
+  </text>
+
+  <!-- Tagline -->
+  <text x="280" y="185" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#8888a0" letter-spacing="0.1em">
+    OPEN SOURCE COMPLIANCE ENGINE
+  </text>
+
+  <!-- Accent line -->
+  <rect x="280" y="205" width="400" height="2" fill="url(#textGradient)" rx="1"/>
+
+  <!-- Feature badges -->
+  <g transform="translate(280, 230)">
+    <rect x="0" y="0" width="100" height="28" rx="14" fill="rgba(0,245,255,0.1)" stroke="#00f5ff" stroke-width="1" opacity="0.8"/>
+    <text x="50" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#00f5ff" text-anchor="middle">Rule Engine</text>
+
+    <rect x="115" y="0" width="100" height="28" rx="14" fill="rgba(59,130,246,0.1)" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+    <text x="165" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Blockchain</text>
+
+    <rect x="230" y="0" width="80" height="28" rx="14" fill="rgba(168,85,247,0.1)" stroke="#a855f7" stroke-width="1" opacity="0.8"/>
+    <text x="270" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#a855f7" text-anchor="middle">Plugins</text>
+
+    <rect x="325" y="0" width="70" height="28" rx="14" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1" opacity="0.8"/>
+    <text x="360" y="19" font-family="system-ui, sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">SDKs</text>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="80" r="4" fill="#00f5ff" opacity="0.6"/>
+  <circle cx="1080" cy="120" r="3" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="1020" cy="140" r="2" fill="#a855f7" opacity="0.4"/>
+  <circle cx="1100" cy="180" r="3" fill="#22c55e" opacity="0.5"/>
+  <circle cx="1040" cy="220" r="2" fill="#f59e0b" opacity="0.4"/>
+</svg>
